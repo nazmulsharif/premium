@@ -138,6 +138,7 @@ a:hover{
 .mid li:last-child{
 	display: none;
 }
+
 @media screen and (max-width: 1082px) {
   .menu li {
    	background-color: #005B9A;
@@ -195,6 +196,7 @@ a:hover{
 	position: relative;
 	width: 100%;
 }
+
 .dark{
 	width: 92%;
 	height: 100%;
@@ -204,6 +206,49 @@ a:hover{
 	left: 4%;
 	opacity: .5;
 	display: none;
+}
+.img-2{
+	position: relative;
+}
+.dark1{
+	width: 97.3%;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 1.4%;
+	opacity: .5;
+	display: none;
+}
+.title1{
+	width: 97.3%;
+	height: 20%;
+	background-color: #000;
+	position: absolute;
+	bottom: 0;
+	left: 1.4%;
+	opacity: .8;
+	text-align: center;
+	color: #fff;
+}
+@media screen and (max-width:775px){
+	.dark1{
+	width: 92.3%;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 4%;
+	opacity: .5;
+	display: none;
+	}
+	.title1{
+		width: 92.3%;
+		left: 4%;
+	}
+} 
+.img-2:hover .dark1{
+	display: block;
 }
 .img-1:hover .dark{
 	display: block;
