@@ -17,6 +17,22 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+		@media (max-width:2900px){
+			#right-icons{
+				display:none;
+			}
+		}
+		@media (max-width:1080px){
+			#right-icons{
+				display:flex;justify-content:center;flex-wrap: nowrap;
+			}
+		}
+		.search_show{
+			display:block !important;
+			margin-left: 15%;
+		}
+</style>
 <body>
 	<!--header start--->
 	 <div class="container-fluid header-top">
@@ -64,6 +80,18 @@
 					    <li class="nav-item"><a class="nav-link" href="#">FUEL</a></li>
 					    <li class="nav-item"><a class="nav-link" href="#"data-toggle="collapse" data-target="#fristnav">CLOSE MENU</a></li>
 				    </ul>
+				</div>
+				<div class="input-group" id="right-icons" style="width:auto;position:relative;right:50px;top:0;">
+						<input type="search" placeholder="Search for ...." id="show_s" class="form-control"style="display:none;">
+						<div class="input-group-append">
+							<button type="button" class="btn" style="background-color:transparent;border:0px solid #176AA1;" onclick="shows()">
+							<i class="fa fa-search" style="color: #fff;"></i></button>
+							<button type="button" class="btn" style="background-color:transparent;border:0px solid #176AA1;">
+							<i class="fa fa-shopping-cart" style="font-size:25px"></i></button>
+							<button type="button" class="btn" style="background-color:transparent;border:0px solid #176AA1;">
+							<i class="fa" style="color: #fff;">Call</i></button>
+						</div>
+				</div>
 			</nav>
 		</div>
 	</div>
@@ -241,6 +269,10 @@
 	<script src="js/poppers.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
-	
+	<script>
+		function shows(){
+			document.getElementById("show_s").classList.toggle("search_show");
+		}
+	</script>
 </body>
 </html>
